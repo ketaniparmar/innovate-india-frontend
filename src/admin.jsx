@@ -11,7 +11,7 @@ export default function Admin() {
 
   const fetchLeads = async () => {
     try {
-      const response = await fetch('http://https://innovate-india-suite.onrender.com/api/admin/leads');
+      const response = await fetch('https://innovate-india-suite.onrender.com/api/admin/leads');
       const data = await response.json();
       if (data.success) {
         setLeads(data.leads);
@@ -26,7 +26,7 @@ export default function Admin() {
     alert(`Spinning up the PDF Engine for ${lead.project_name}... Please wait a few seconds.`);
     
     try {
-      const response = await fetch('http://https://innovate-india-suite.onrender.com/api/admin/generate-pdf', {
+      const response = await fetch('https://innovate-india-suite.onrender.com/api/admin/generate-pdf', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
