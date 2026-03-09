@@ -21,7 +21,7 @@ export default function App() {
     setLoading(true);
     
     try {
-      const response = await fetch('https://innovate-india-suite.onrender.com/api/estimator/calculate', {
+      const response = await fetch('https://innovate-india-suite.onrender.com/api/admin/generate-pdf', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
